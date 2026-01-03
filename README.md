@@ -1,19 +1,18 @@
-# The Bootroom – Step 1: Registration UI (Next.js App Router)
+# The Bootroom – Step 2: Ticket PDF + QR
 
-This ZIP contains **Step 1** of the project:
-- Retro/premium registration UI
-- 10-player accordion form
-- File uploads: **Logo (PNG)** required, **Brand Guidelines (PDF)** optional
-- React Hook Form + Zod validation
+Includes:
+- Step 1 Registration UI (retro, responsive, 10-player accordion)
+- Step 2 Ticket PDF generation + QR
+  - Server Action creates a signed `teamToken`
+  - In-memory store (dev) keeps the submitted team payload
+  - `/api/ticket/[teamToken]` generates a premium PDF ticket with embedded QR
 
-## Run locally
+## Run
 ```bash
+cp .env.example .env.local
 npm install
 npm run dev
 ```
+Open http://localhost:3000/register
 
-Open: http://localhost:3000/register
-
-## Notes
-- This step focuses on **UI + validation** only.
-- Upload to storage + DB save will be in next steps.
+> In Step 3 we’ll replace the in-memory store with MongoDB + S3/R2.

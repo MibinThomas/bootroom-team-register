@@ -15,12 +15,8 @@ export default {
         bootbrown: "#7C2D12",
         ink: "#111827",
       },
-      boxShadow: {
-        soft: "0 6px 24px rgba(17,24,39,0.08)",
-      },
-      borderRadius: {
-        "2xl": "1.25rem",
-      },
+      boxShadow: { soft: "0 6px 24px rgba(17,24,39,0.08)" },
+      borderRadius: { "2xl": "1.25rem" },
       fontFamily: {
         display: ["ui-serif", "Georgia", "serif"],
         body: ["ui-sans-serif", "system-ui", "Segoe UI", "Roboto", "Arial", "sans-serif"],
