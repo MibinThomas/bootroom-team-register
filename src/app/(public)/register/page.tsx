@@ -7,17 +7,16 @@ export const metadata = {
 
 export default function RegisterPage() {
   return (
-    <main className="min-h-screen p-4 md:p-10">
+    <main className="min-h-screen p-4 md:p-10 bg-bootred">
       <div className="mx-auto max-w-5xl">
-        <header className="rounded-2xl border border-bootred/20 bg-white/70 backdrop-blur shadow-soft p-6 md:p-8">
-  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <header className="rounded-2xl border border-bootred/20 bg-bootred shadow-soft p-5 md:p-8">
+  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-6">
 
     {/* LEFT: Logo + Title */}
-    <div className="flex items-center gap-4">
-      
+    <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+
       {/* LOGO CONTAINER */}
-      <div className="h-16 w-16 md:h-20 md:w-20 rounded-xl bg-white border border-bootred/20 shadow-soft flex items-center justify-center overflow-hidden">
-        {/* Replace src with your actual logo */}
+      <div className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-60 rounded-xl bg-white/10 border border-white/15 shadow-soft flex items-center justify-center overflow-hidden shrink-0">
         <img
           src="/bootroom-logo.png"
           alt="The Bootroom Logo"
@@ -26,11 +25,11 @@ export default function RegisterPage() {
       </div>
 
       {/* TITLE */}
-      <div>
-        <h1 className="font-display text-3xl md:text-4xl text-bootred">
+      <div className="min-w-0">
+        <h1 className="font-display text-2xl sm:text-3xl md:text-4xl text-white leading-tight">
           Team Registration
         </h1>
-        <p className="mt-1 text-sm md:text-base text-black/70">
+        <p className="mt-1 text-sm sm:text-base text-white/80">
           Complete the form below to register your team. 10 players are required.
         </p>
       </div>
@@ -46,6 +45,7 @@ export default function RegisterPage() {
 
   </div>
 </header>
+
 
 
         <section className="mt-6">
