@@ -1,3 +1,1 @@
-export default function AdminDashboard() {
-  return <div>Admin Dashboard</div>;
-}
+export default function AdminPage(){return <div className='p-6'>Admin placeholder</div>}
