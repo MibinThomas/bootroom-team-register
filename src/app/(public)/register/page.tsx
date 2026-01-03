@@ -16,7 +16,7 @@ export default function RegisterPage() {
     <div className="flex flex-col sm:flex-row sm:items-center gap-4">
 
       {/* LOGO CONTAINER */}
-      <div className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-60 rounded-xl bg-white/10 border border-white/15 shadow-soft flex items-center justify-center overflow-hidden shrink-0">
+      <div className="h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-60 rounded-xl bg-bootred/10 border border-white/15 shadow-soft flex items-center justify-center overflow-hidden shrink-0">
         <img
           src="/bootroom-logo.png"
           alt="The Bootroom Logo"
@@ -26,7 +26,7 @@ export default function RegisterPage() {
 
       {/* TITLE */}
       <div className="min-w-0">
-        <h1 className="font-display text-2xl sm:text-3xl md:text-4xl text-white leading-tight">
+        <h1 className="font-display text-2xl sm:text-3xl md:text-4xl text-bootgold leading-tight">
           Team Registration
         </h1>
         <p className="mt-1 text-sm sm:text-base text-white/80">
@@ -39,14 +39,12 @@ export default function RegisterPage() {
     <div className="inline-flex items-center gap-2 rounded-2xl bg-cream border border-bootgold/30 px-4 py-2 self-start md:self-auto">
       <span className="h-2 w-2 rounded-full bg-bootgold" />
       <span className="text-xs md:text-sm text-bootbrown">
-        Retro • Premium • Responsive
+        Retro , Premium , Exclusive
       </span>
     </div>
 
   </div>
 </header>
-
-
 
         <section className="mt-6">
           <RegisterForm />
